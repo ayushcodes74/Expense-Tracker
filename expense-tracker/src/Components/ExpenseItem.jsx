@@ -1,11 +1,28 @@
-function ExpenseItem ({ title, amount, category}) {
+function ExpenseItem ({ id, title, amount, category, deleteExpense}) {
     return (
-        <div>
-            <h3>Title: {title}</h3>
-            <h3>Amount: ₹{amount}</h3>
-            <h3>Category: {category}</h3>
-            <button>Delete</button>
-        </div>
-    )
+    <div className="bg-slate-900 p-5 rounded-2xl shadow-lg border border-slate-800">
+
+        <h3 className="text-xl font-bold mb-3">
+            {title}
+        </h3>
+
+        <p className="text-2xl font-bold text-purple-400 mb-2">
+            ₹{amount}
+        </p>
+
+        <p className="text-slate-300 mb-4">
+            Category: {category}
+        </p>
+
+
+        <button
+            onClick={() => deleteExpense(id)}
+            className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-lg transition"
+        >
+            Delete
+        </button>
+
+    </div>
+)
 }
 export default ExpenseItem;
