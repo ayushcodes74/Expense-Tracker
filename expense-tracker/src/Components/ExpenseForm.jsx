@@ -27,7 +27,7 @@ function ExpenseForm({ addExpense }) {
         setCategory("Food");
     }
     return (
-        <div className="max-w-md mx-auto bg-slate-900 p-6 rounded-2xl shadow-lg mb-8">
+        <div className="max-w-lg mx-auto bg-slate-900 p-6 rounded-2xl shadow-lg mb-8">
 
             <h2 className="text-2xl font-bold mb-5 text-center">
                 Add Expense

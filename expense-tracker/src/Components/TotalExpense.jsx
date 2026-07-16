@@ -3,7 +3,7 @@ function TotalExpense({ expenses }) {
         return acc + expense.amount;
     }, 0);
     return (
-        <div className="max-w-4xl mx-auto mt-8 bg-purple-600 p-8 rounded-2xl shadow-lgflexjustify-betweenitems-center">
+        <div className="max-w-3xl mx-auto mt-8 bg-purple-600 p-8 rounded-2xl shadow-lgflexjustify-betweenitems-center">
 
             <h2 className="text-xl font-semibold">
                 Total Spending 💰
